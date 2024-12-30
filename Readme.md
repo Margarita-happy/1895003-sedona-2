@@ -2,7 +2,7 @@
 
 * Студент: [Маргарита Закирова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1895003).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
-
+* Сайт: [Мой проект Sedona] (https://github.com/Margarita-happy/1895003-sedona-2/settings/pages).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
