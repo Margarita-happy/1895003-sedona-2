@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <!--Шапка сайта-->
+
+    <header class="header-page">
+      <a class="logo" href="index.html" aria-current="page">
+        <img src="img/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
+      </a>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+
+            <!--Вставка иконки лупы-->
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Поиск</a>
+          </li>
+
+            <!--Вставка иконки Избранного-->
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Избранное</a>
+          </li>
+
+            <!--Вставка кнопки Хочу сюда-->
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Основной контент сайта-->
+
+    <main class="main">
+      <section class="main-start">
+        <h1 class="visually-hidden">Welcome Sedona</h1>
+        <img class="main-start-img" src="#" alt="Добро пожаловать в Седону">
+      </section>
+
+      <!--Текст после картинки-->
+      <section class="main-start-text">
+        <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+        <h2 class="main-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</h2>
+      </section>
+
+      <!-- Преимущества-->
+      <section class="main-advantages">
+        <ul class="main-advantages-list">
+          <li>
+            <h3>Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="main-advantages-img" src="#" alt="Город Седона">
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <img class="main-advantages-img" src="#" alt="Горы города Седона">
+          <h3>Там есть мост дьявола</h3>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+      </section>
+
+      <!--Наш слоган -->
+      <section class="main-slogan">
+
+        <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <h2 class="main-title">Опытный персонал и качественное обслуживание!</h2>
+    </section>
+
+      <!--Наши услуги -->
+
+      <section class="main-services">
+        <ul class="main-servises-list">
+          <li class="main-servises-item">
+            <h2 class="main-servises-name">Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+
+          <li class="main-servises-item">
+            <h2 class="main-servises-name">Еда</h2>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+
+          <li class="main-servises-item">
+            <h2 class="main-servises-name">Сувениры</h2>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <!--Поиск гостиницы в Седоне-->
+      <section>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="button button-search">Поиск гостиницы в Седоне</button>
+      </section>
+
+      <!--Подписка на рассылку-->
+      <section>
+        <img src="#" alt="Размытые горы в Седоне">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+        </form>
+      </section>
+    </main>
+
+    <!--Подвал сайта-->
+
+    <footer class="footer-page">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#">Вконтакте</a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#">Телеграм</a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+
+      <!--Футер телефон-->
+
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Телефон</h2>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <!--Ссылка на курсы HTML Academy-->
+      <section class="footer-link">
+        <h2 class="visually-hidden">.HTML Academy</h2>
+        <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="#" alt="Ссылка на курсы HTML Academy">
+        </a>
+
+      </section>
+
+    </footer>
 
   </body>
+
 </html>
