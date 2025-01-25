@@ -11,19 +11,19 @@
     <!--Шапка Каталога-->
 
     <header class="header-page">
-      <a class="logo" href="index.html" aria-current="page">
+      <a class="logo" href="index.html">
         <img src="img/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
       <nav class="header-navigation">
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="index.html" aria-current="page">Главная</a>
+            <a class="header-navigation-link" href="index.html">Главная</a>
           </li>
           <li class="header-navigation-item">
             <a class="header-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="header-navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -31,13 +31,16 @@
             <!--Вставка иконки лупы-->
 
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Поиск</a>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span></a>
           </li>
 
             <!--Вставка иконки Избранного-->
 
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Избранное</a>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              </a>
           </li>
 
             <!--Вставка кнопки Хочу сюда-->
@@ -54,19 +57,17 @@
     <main class="main-catalog">
       <section>
         <h1 class="main-catalog-title">Гостиницы Седоны</h1>
-        <img class="main-catalog-img" src="#" alt="Размытый фон горы Седоны">
         <ul class="main-breadcrumbs">
           <li class="main-breadcrumbs-item">
             <a href="index.html">Главная</a>
           </li>
-          <li>></li>
+
           <li>
-            <a href="catalog.html" aria-current="page">Гостиницы</li>
+            <a href="catalog.html" aria-current="page">Гостиницы</a>
+          </li>
         </ul>
 
         <!--Форма поиска гостиницы-->
-
-        <h2 class="visually-hidden">Фильтры для поска гостиницы</h2>
 
         <!--Чекбоксы-->
 
@@ -114,118 +115,131 @@
 
         <fieldset>
           <legend>Стоимость, &#8381;:</legend>
-          <ul>
-            <li>
+            <div>
               <label>
-                <input type="text" name="start-price" value="0">
+                <input type="number" name="start-price" value="0">
               </label>
-            </li>
-            <li>
+
               <label>
-                <input type="text" name="final-price" value="14000">
+                <input type="number" name="final-price" value="14000">
               </label>
-            </li>
-            <li>
+            </div>
+
               <input type="range">
-            </li>
-          </ul>
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
+
+
         </fieldset>
+        <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
       </form>
       </section>
 
       <!--Фильтры найденных карточек гостиниц-->
 
       <section>
-        <h2 class="visually-hidden">Фильтры</h2>
-        <p>Найдено гостиниц: 38</p>
-        <select>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="cheap">Сначала с высоким рейтингом</option>
-        </select>
+        <div>
+          <h2>Найдено гостиниц: 38</h2>
+            <select>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="cheap">Сначала дорогие</option>
+              <option value="cheap">Сначала с высоким рейтингом</option>
+            </select>
 
-        <ul>
-          <li>
-            <a href="#">Мелкие значки</a>
-          </li>
-          <li>
-            <a href="#">Крупные значки</a>
-          </li>
-          <li>
-            <a href="#">Списком</a>
-          </li>
-        </ul>
-      </section>
+            <ul>
+              <li>
+                <a href="#">Мелкие значки</a>
+              </li>
+              <li>
+                <a href="#">Крупные значки</a>
+              </li>
+              <li>
+                <a href="#">Списком</a>
+              </li>
+            </ul>
+        </div>
 
-      <!--Карточки гостиниц-->
 
-      <section>
+       <!--Карточки гостиниц-->
+
+
         <h2 class="visually-hidden">Карточки гостиниц</h2>
         <ul>
           <li>
-            <h3>Amara Resort & Spa</h3>
+
             <a href="#">
-              <img src="#" alt="Звездное небо из пещеры">
+              <img src="#" alt=""/>
+              <h3>Amara Resort & Spa</h3>
             </a>
             <span>Гостиница</span>
             <span>от 4000 &#8381;</span>
             <a href="#">Подробнее</a>
             <button type="submit">В избранное</button>
-            <img src="#" alt="звезды рейтинга">
+            <span class="stars"></span>
             <span>Рейтинг: 8,5</span>
           </li>
 
           <li>
-            <h3>Villas at Poco Diablo</h3>
+
             <a href="#">
-              <img src="#" alt="Радуга в горах">
+              <img src="#" alt=""/>
+              <h3>Villas at Poco Diablo</h3>
             </a>
             <span>Гостиница</span>
             <span>от 5000 &#8381;</span>
             <a href="#">Подробнее</a>
             <button type="submit">В избранном</button>
-            <img src="#" alt="звезды рейтинга">
+            <span class="stars"></span>
             <span>Рейтинг: 9,2</span>
           </li>
 
           <li>
-            <h3>Desert Quail Inn</h3>
+
             <a href="#">
-              <img src="#" alt="Гора и деревья">
+              <img src="#" alt=""/>
+              <h3>Desert Quail Inn</h3>
             </a>
             <span>Гостиница</span>
             <span>от 2500 &#8381;</span>
             <a href="#">Подробнее</a>
-            <button type="submit">В избранном</button>
-            <img src="#" alt="звезды рейтинга">
+            <button type="button">В избранном</button>
+            <span class="stars"></span>
             <span>Рейтинг: 6,9</span>
           </li>
 
           <li>
-            <h3>GreenTree Inn</h3>
+
             <a href="#">
-              <img src="#" alt="Гора на фоне звездного неба">
+              <img src="#" alt=""/>
+              <h3>GreenTree Inn</h3>
             </a>
             <span>Гостиница</span>
             <span>от 1500 &#8381;</span>
             <a href="#">Подробнее</a>
             <button type="submit">В избранном</button>
-            <img src="#" alt="звезды рейтинга">
+            <span class="stars"></span>
             <span>Рейтинг: 5,0</span>
           </li>
         </ul>
         <!--Пагинация-->
 
-        <div class="pagination">
-          <a href="#" class="active»">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">...</a>
-          <a href="#">10</a>
-        </div>
+        <ul class="pagination">
+          <li>
+            <a class="active»">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <span>...</span>
+          <li>
+            <a href="#">10</a>
+          </li>
+        </ul>
       </section>
 
       <!--Подписка на рассылку-->
@@ -240,42 +254,33 @@
       </section>
     </main>
 
-    <!--Подвал сайта-->
+  <!--Подвал сайта-->
 
-    <footer class="footer-page">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="#">Вконтакте</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#">Телеграм</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#">Ютуб</a>
-          </li>
-        </ul>
-      </section>
+  <footer class="footer-page">
+    <ul class="social-list">
+    <li class="social-item">
+      <a href="#">Вконтакте</a>
+    </li>
+    <li class="social-item">
+      <a href="#">Телеграм</a>
+    </li>
+    <li class="social-item">
+      <a href="#">Ютуб</a>
+    </li>
+  </ul>
 
-      <!--Футер телефон-->
+<!--Футер телефон-->
 
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Телефон</h2>
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+  <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <!--Ссылка на курсы HTML Academy-->
-      <section class="footer-link">
-        <h2 class="visually-hidden">.HTML Academy</h2>
-        <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="#" alt="Ссылка на курсы HTML Academy">
-        </a>
+<!--Ссылка на курсы HTML Academy-->
 
-      </section>
+  <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+    <img src="#" alt="Ссылка на курсы HTML Academy">
+  </a>
 
-    </footer>
+</footer>
 
-  </body>
+</body>
 
 </html>
