@@ -1,0 +1,234 @@
+
+/*Шрифты*/
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/*Общие настройки текста для страницы*/
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/*Настройки текста для шапки сайта*/
+
+.header-page{
+  background-color: #ffffff;
+}
+
+.header-navigation-link{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20;
+  text-decoration: none;
+  color:#000000;
+}
+
+.navigation-link{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20;
+  text-decoration: none;
+  color:#000000;
+}
+
+.header-button{
+background-color:#756157 ;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+/* Настройки текста для Основного контента сайта(main) */
+
+.welcome{
+background-image: url(../images/index/hero.jpg);
+background-size: 100%, auto, cover;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+.hero{
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.start-description{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+}
+
+.advantages-list{
+background-color: #82B3D3 ;
+}
+
+.advantages-title{
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.title-color{
+color: #FFFFFF;
+}
+
+.advantages-text{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.text-color{
+color: #FFFFFF;
+}
+
+.advantages-lite{
+  background-color: #FFFFFF;
+}
+
+/*Слоган текст*/
+
+.slogan-text{
+
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.slogan-title{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+}
+
+/*Наши услуги*/
+.servises-name{
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.servises-text{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.servises-medium{
+background: rgba(131, 179, 211, 0.12);
+
+}
+
+/*Заинтересовались*/
+
+.search-title{
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.search-subtitle{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+}
+
+.button-search{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #756157;
+}
+
+/*Подпишитесь*/
+.subscribe{
+background-image: url(../images/index/subscribe.jpg);
+background-size: 100%, auto, cover;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+.subscribe-title{
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.subscribe-text{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #FFFFFF;
+}
+
+.subscribe-button{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #82B3D3;
+}
+
+.footer-contacts-phone{
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-transform: uppercase;
+color: #000000;
+}
