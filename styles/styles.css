@@ -19,14 +19,20 @@
 
 /*Общие настройки текста для страницы*/
 
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+
 body{
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 24px;
-
   background-color: #f2f2f2;
   color: #000000;
-}
+  }
+
 
 /*Настройки текста для шапки сайта*/
 
@@ -37,27 +43,22 @@ body{
 .header-navigation-link{
   font-style: normal;
   font-weight: 700;
-  font-size: 20;
+  font-size: 20px;
   text-decoration: none;
   color:#000000;
 }
 
-.navigation-link{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20;
-  text-decoration: none;
-  color:#000000;
-}
-
-.header-button{
-background-color:#756157 ;
-font-style: normal;
-font-weight: 700;
+.button{
+padding: 8px 34px;
 font-size: 16px;
 line-height: 20px;
+background-color:#756157;
 text-transform: uppercase;
+border-radius: 4px;
+font-style: normal;
+font-weight: 700;
 color: #FFFFFF;
+border: none;
 }
 
 /* Настройки текста для Основного контента сайта(main) */
@@ -69,8 +70,7 @@ background-repeat: no-repeat;
 background-position: left top;
 }
 
-.hero{
-font-style: normal;
+.text-basic{
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
@@ -78,7 +78,7 @@ text-transform: uppercase;
 color: #000000;
 }
 
-.start-description{
+.text-basic-lite{
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
@@ -91,6 +91,7 @@ background-color: #82B3D3 ;
 }
 
 .advantages-title{
+font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 28px;
@@ -99,7 +100,7 @@ color: #000000;
 }
 
 .title-color{
-color: #FFFFFF;
+color: #ffffff;
 }
 
 .advantages-text{
@@ -111,35 +112,17 @@ color: #333333;
 }
 
 .text-color{
-color: #FFFFFF;
+color: #ffffff;
 }
 
 .advantages-lite{
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-/*Слоган текст*/
-
-.slogan-text{
-
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-color: #000000;
-}
-
-.slogan-title{
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-color: #333333;
-}
 
 /*Наши услуги*/
 .servises-name{
+font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 28px;
@@ -180,6 +163,7 @@ color: #333333;
 }
 
 .button-search{
+padding: 8px 50px;
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -214,21 +198,171 @@ line-height: 26px;
 color: #FFFFFF;
 }
 
-.subscribe-button{
+/*Инпут ничего не наследует, поэтоу указываем все параметры*/
+
+.field{
+font-family: 'PT Sans', sans-serif;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+
+.subscribe-button{
 font-size: 20px;
 line-height: 36px;
-text-transform: uppercase;
 color: #FFFFFF;
 background-color: #82B3D3;
 }
 
 .footer-contacts-phone{
-font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 40px;
 text-transform: uppercase;
 color: #000000;
+}
+
+
+
+/*КАТАЛОГ стили*/
+
+.main-catalog-title{
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;
+}
+
+.catalog-filter{
+background-image: url(../images/catalog/filter.jpg);
+background-size: 100%, auto, cover;
+background-repeat: no-repeat;
+background-position: left top;
+}
+
+.main-breadcrumbs{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.heading-form{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.click-text{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+}
+
+.input-text{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+}
+
+.button-filter{
+padding: 8px 50px;
+background-color: #82B3D3;
+}
+
+.button-small{
+padding: 8px 50px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.search-results{
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.sorting{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.hotel-name{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.hotel-price{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.button-dark{
+  background-color: #756157;
+}
+
+.button-favorites{
+  background-color: #82B3D3;
+  border: none;
+}
+
+.button-chose{
+  background-color: #7DB54F;
+  border: none;
+}
+
+.rating{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #333333;
+}
+
+.pagination-list{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.title-dark{
+color: #000000;
+}
+
+.text-dark{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #333333;
 }
