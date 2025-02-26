@@ -27,7 +27,7 @@
             <a class="header-navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-user">
 
             <!--Вставка иконки лупы-->
 
@@ -39,7 +39,7 @@
             <!--Вставка иконки Избранного-->
 
           <li class="navigation-item">
-            <a class="navigation-link header-button" href="#">
+            <a class="navigation-link" href="#">
               <span>Избранное</span>
             </a>
           </li>
@@ -72,10 +72,10 @@
 
         <!--Чекбоксы-->
 
-        <form action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset>
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filter-checkbox">
           <legend class="heading-form">Инфраструктура:</legend>
-          <ul>
+          <ul class="text-selection">
             <li>
               <label class="click-text" for="pool">
                 <input type="checkbox" name="swimming-pool" checked id="pool">Бассейн</label>
@@ -93,9 +93,9 @@
 
         <!--Радиокнопки-->
 
-          <fieldset>
+          <fieldset class="filter-checkbox filter-radio">
           <legend class="heading-form">Тип жилья:</legend>
-          <ul>
+          <ul class="text-selection">
             <li>
               <label class="click-text" >
                 <input type="radio" name="rooms" value="hotel" checked>Гостиница</label>
@@ -114,7 +114,7 @@
 
         <!--Форма с ценой-->
 
-        <fieldset>
+        <fieldset class="filter-price">
           <legend class="heading-form">Стоимость, &#8381;:</legend>
             <div>
               <label class="input-text">
@@ -129,7 +129,7 @@
               <input type="range">
 
 
-        </fieldset>
+        </fieldset class="buttons">
         <button class="button button-filter" type="submit">Применить</button>
           <button class="button button-small" type="reset">Сбросить</button>
       </form>
@@ -138,16 +138,16 @@
 
       <!--Фильтры найденных карточек гостиниц-->
 
-      <section>
-        <div>
-          <h2 class="header-second">Найдено гостиниц: 38</h2>
+      <section class="catalog-sorting">
+        <div class="hotels-sorting">
+          <h2 class="header-second hotels-found">Найдено гостиниц: 38</h2>
             <select class="sorting">
               <option value="cheap">Сначала дешевые</option>
               <option value="cheap">Сначала дорогие</option>
               <option value="cheap">Сначала с высоким рейтингом</option>
             </select>
 
-            <ul>
+            <ul class="grouping">
               <li>
                 <a href="#">Мелкие значки</a>
               </li>
@@ -165,9 +165,8 @@
 
 
         <h2 class="visually-hidden">Карточки гостиниц</h2>
-        <ul>
+        <ul class="cards">
           <li>
-
             <a class="hotel" href="#">
               <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt=""/>
               <h3 class="hotel-name">Amara Resort & Spa</h3>
@@ -247,7 +246,8 @@
 
       <!--Подписка на рассылку-->
 
-      <section>
+      <section class="subscribe">
+        <div class="subscribe-box">
         <h2 class="header-second title-dark">Подпишитесь на рассылку</h2>
         <p class="text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -255,6 +255,7 @@
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
+      </div>
       </section>
     </main>
 
@@ -263,6 +264,7 @@
   <!--Картинки соцсетей и логотип html academy добавляются через css-->
 
   <footer class="footer-page">
+    <div class="footer-page-container">
     <ul class="social-list">
     <li class="social-item">
       <a href="#">Вконтакте</a>
@@ -287,7 +289,7 @@
   <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="images/icons/logo-htmlacademy.svg" alt="Ссылка на курсы HTML Academy">
   </a>
-
+</div>
 </footer>
 
 </body>
