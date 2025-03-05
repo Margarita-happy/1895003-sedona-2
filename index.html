@@ -36,7 +36,7 @@
         <ul class="navigation-user">
 
             <!--Вставка иконки лупы-->
-
+          <div class="navigation-interface">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -47,10 +47,10 @@
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span>Избранное</span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-
+        </div>
             <!--Вставка кнопки Хочу сюда-->
 
           <li class="navigation-item">
@@ -80,15 +80,18 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item item-color">
-            <h3 class="advantages-title title-color">Настоящий городок</h3>
-            <p class="advantages-text text-color">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+            <div class="advantages-item-container">
+              <h3 class="advantages-title title-color">Настоящий городок</h3>
+              <p class="advantages-text text-color">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+            </div>
+
             <img class="advantages-img-first" src="images/index/photo-1.jpg" width="800" height="385" alt="Город Седона">
           </li>
           <li class="advantages-item advantages-lite">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-text">Все достопримечательности<br>находятся очень близко</p>
           </li>
-          <li class="advantages-item advantages-lite">
+          <li class="advantages-item advantages-lite background-middle">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </li>
@@ -98,15 +101,17 @@
           </li>
           <li class="advantages-item item-color">
           <img class="advantages-img-second" src="images/index/photo-2.jpg" width="800" height="385" alt="Горы города Седона">
+        <div class="advantages-item-container">
           <h3 class="advantages-title title-color ">Там есть мост дьявола</h3>
           <p class="advantages-text text-color">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+        </div>
           </li>
         </ul>
       </section>
 
       <!--Наш слоган -->
       <section class="slogan">
-        <h2 class="header-second">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <h2 class="header-second slogan-padding">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
         <p class="text-basic">Опытный персонал и качественное обслуживание!</p>
     </section>
 
@@ -140,7 +145,7 @@
       </section>
 
       <!--Подписка на рассылку-->
-      <section class="subscribe">
+      <section class="subscribe subscribe-image">
         <div class="subscribe-box">
         <h2 class="header-second subscribe-title">Подпишитесь на рассылку</h2>
         <p class="text-basic subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -161,13 +166,13 @@
       <div class="footer-page-container">
           <ul class="social-list">
           <li class="social-item">
-            <a href="#">Вконтакте</a>
+            <a class="social-media" href="#">Вк</a>
           </li>
           <li class="social-item">
-            <a href="#">Телеграм</a>
+            <a class="social-media" href="#">Тг</a>
           </li>
           <li class="social-item">
-            <a href="#">Ютуб</a>
+            <a class="social-media" href="#">Ют</a>
           </li>
         </ul>
 

@@ -27,23 +27,25 @@
             <a class="header-navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
+
         <ul class="navigation-user">
 
             <!--Вставка иконки лупы-->
-
+        <div class="navigation-interface">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
 
             <!--Вставка иконки Избранного-->
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span>Избранное</span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-
+        </div>
             <!--Вставка кнопки Хочу сюда-->
 
           <li class="navigation-item">
@@ -148,14 +150,14 @@
             </select>
 
             <ul class="grouping">
-              <li>
-                <a href="#">Мелкие значки</a>
+              <li class="view-item">
+                <a class="view" href="#">Вид</a>
               </li>
-              <li>
-                <a href="#">Крупные значки</a>
+              <li class="view-item">
+                <a class="view" href="#">Вид</a>
               </li>
-              <li>
-                <a href="#">Списком</a>
+              <li class="view-item">
+                <a class="view" href="#">Вид</a>
               </li>
             </ul>
         </div>
@@ -225,21 +227,21 @@
         <!--Пагинация-->
 
         <ul class="pagination">
-          <li class="pagination-list">
-            <a class="pagination-item active">1</a>
+          <li class="pagination-item">
+            <a class="pagination-link active">1</a>
           </li>
-          <li class="pagination-list">
-            <a class="pagination-item" href="#">2</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
           </li>
-          <li class="pagination-list">
-            <a class="pagination-item" href="#">3</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pagination-list">
-            <a class="pagination-item" href="#">4</a>
-          </li class="pagination-list">
-          <span>...</span>
-          <li class="pagination-list">
-            <a class="pagination-item" href="#">10</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li class="pagination-item">
+          <span class="pagination-points">...</span>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -248,11 +250,11 @@
 
       <section class="subscribe">
         <div class="subscribe-box">
-        <h2 class="header-second title-dark">Подпишитесь на рассылку</h2>
-        <p class="text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="header-second title-dark subscribe-padding">Подпишитесь на рассылку</h2>
+        <p class="text-basic distance-second">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label for="newsletter-email"></label>
+          <input class="field field-light" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>
@@ -265,17 +267,17 @@
 
   <footer class="footer-page">
     <div class="footer-page-container">
-    <ul class="social-list">
-    <li class="social-item">
-      <a href="#">Вконтакте</a>
-    </li>
-    <li class="social-item">
-      <a href="#">Телеграм</a>
-    </li>
-    <li class="social-item">
-      <a href="#">Ютуб</a>
-    </li>
-  </ul>
+        <ul class="social-list">
+        <li class="social-item">
+          <a class="social-media" href="#">Вк</a>
+        </li>
+        <li class="social-item">
+          <a class="social-media" href="#">Тг</a>
+        </li>
+        <li class="social-item">
+          <a class="social-media" href="#">Ют</a>
+        </li>
+      </ul>
 
 <!--Футер телефон-->
 
