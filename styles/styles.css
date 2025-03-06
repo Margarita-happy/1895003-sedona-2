@@ -18,7 +18,7 @@
 }
 
 /*Общие настройки текста для страницы*/
-
+*,
 *::before,
 *::after{
   box-sizing: border-box;
@@ -30,6 +30,8 @@ html{
   height: 100%;
 }
 
+
+
 body{
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
@@ -37,7 +39,11 @@ body{
   background-color: #f2f2f2;
   color: #000000;
   height: 100%;
-  }
+}
+
+.body{
+margin: 0;
+}
 
 .container{
   display: flex;
@@ -48,8 +54,7 @@ body{
 
 .header-page{
   background-color: #ffffff;
-  width: 1060px;
-  display: flex;
+  width: 1200px;
   margin:0 auto;
   padding:0 70px;
   }
@@ -58,12 +63,16 @@ body{
   width: 140px;
   min-height: 70px;
   padding-right: 30px;
+  position: absolute;
+  top:0;
 }
 
 .header-navigation{
   display: flex;
-  width: 1060px;
   flex-wrap: wrap;
+  position: relative;
+  padding-left: 168px;
+
 }
 
 /*меню в шапке*/
@@ -106,13 +115,13 @@ margin-right: 20px;
 
 .navigation-item{
   min-width: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-link{
   text-decoration: none;
   color: #ffffff;
-
-
 }
 
 .button{
@@ -267,10 +276,6 @@ text-align: center;
 padding-bottom: 102px;
 }
 
-.advantages-img-first{
-  width: 800px;
-}
-
 .advantages-img-second{
   width: 800px;
 }
@@ -284,7 +289,7 @@ padding-bottom: 102px;
   flex-direction: column;
   }
 
-  advantages-lite:nth-child(2n){
+  .background-middle{
     background-color: rgba(131, 179, 211, 0.2);
   }
 
@@ -316,10 +321,10 @@ padding-bottom: 102px;
 }
 
 .servises-item{
-  width: 230px;
+  width: 400px;
   text-align: center;
   min-height: 223px;
-  padding: 85px 81px;
+  padding: 183px 85px 81px;
 }
 
 .block-color{
@@ -333,6 +338,7 @@ padding-bottom: 102px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  padding-bottom: 30px;
 }
 
 .servises-text{
@@ -344,7 +350,8 @@ padding-bottom: 102px;
 }
 
 .servises-medium{
-background: rgba(131, 179, 211, 0.12);
+background: rgba(131, 179, 211, 0.12)
+;
 }
 
 /*Заинтересовались*/
@@ -392,7 +399,6 @@ background: rgba(131, 179, 211, 0.12);
 }
 
 .subscribe-box{
-  width: 684px;
   min-height: 214px;
   padding-top: 96px;
   padding-left:258px;
@@ -410,6 +416,10 @@ padding-bottom: 20px;
   margin: 0;
   color: #ffffff;
   padding-bottom: 54px;
+}
+
+.newsletter-form{
+  display: flex;
 }
 
 /*Инпут ничего не наследует, поэтоу указываем все параметры*/
@@ -792,7 +802,10 @@ list-style-type: none;
   min-width: 60px;
   min-height: 60px;
   margin-right: 8px;
-
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .active{
